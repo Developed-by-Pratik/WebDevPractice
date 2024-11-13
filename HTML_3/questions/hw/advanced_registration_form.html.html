@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Registration Form</title>
+    <style>
+        textarea:valid, input:valid {
+            border: 2px solid yellow;
+        }
+        textarea:invalid, input:invalid {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+    
+        <label for="comment">Feedback:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your feedback here" required></textarea>
+
+        <br><br>
+
+        <fieldset>
+            
+            <legend>Choose your Subscription Plan:</legend>
+            
+            <input type="radio" id="plan1" name="sub" value="Basic" required>
+            <label for="plan1">Basic</label>
+            
+            <input type="radio" id="plan2" name="sub" value="Ultra">
+            <label for="plan2">Ultra</label>
+            
+            <input type="radio" id="plan3" name="sub" value="Premium" checked>
+            <label for="plan3">Premium</label>
+        
+        </fieldset>
+
+        <br><br>
+
+        <label for="country">Country Name:</label>
+
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="USA">USA</option>
+            <option value="Africa">Africa</option>
+            <option value="Russia">Russia</option>
+            <option value="India" selected>India</option>
+        </select>
+
+        <br><br>
+
+        <label for="volume">Volume Level:</label>
+        <input type="range" id="volume" name="volume" value="60" step="10" min="10" max="100" required>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    
+</body>
+</html>

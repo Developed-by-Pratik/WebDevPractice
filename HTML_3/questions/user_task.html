@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+
+    <form>
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" 
+               placeholder="Enter Full name here" 
+               pattern="[A-Za-z\s]{1,100}" 
+               title="Full Name should only contain letters and spaces." 
+               required>
+        
+        <label for="email">Email Address: </label>
+        <input type="email" id="email" 
+               placeholder="Enter Email address here" 
+               required>
+        
+        <label for="password">Password: </label>
+        <input type="password" id="password" 
+               placeholder="Enter Password here" 
+               minlength="8"
+               title="Password must be at least 8 characters long." 
+               required>
+        
+        <label for="confirm_password">Confirm Password: </label>
+        <input type="password" id="confirm_password"
+                minlength="8"
+                placeholder="Confirm Password here" 
+                required>
+        
+        <label for="dob">Date of Birth: </label>
+        <input type="text" id="dob"
+               placeholder="Enter Date of Birth (YYYY-MM-DD)" 
+               pattern="\d{4}-\d{2}-\d{2}" 
+               title="Date of Birth must be in the format YYYY-MM-DD." 
+               required>
+        
+        <label for="phone">Phone Number: </label>
+        <input type="text" id="phone"
+               placeholder="Enter Phone Number here" pattern="[+][9][1]\d{10}" 
+               title="Phone Number should be 10 digits long." required>
+        
+        <label for="creditcard">Credit Card Number: </label>
+        <input type="text" id="creditcard"
+               placeholder="Enter Credit Card Number here" pattern="\d{13}" 
+               title="Credit Card Number should be 13 digits long." 
+               required>
+        
+        <label for="username">Username: </label>
+        <input type="text" id="username" 
+               placeholder="Enter Username here" 
+               pattern="[A-Za-z0-9_]{5,20}" 
+               title="Username should be 5 to 20 characters long and can contain letters, numbers, and underscores." 
+               required>
+        
+        <label for="website">Website URL: </label>
+        <input type="url" id="website" 
+               pattern="https?://.+"
+               placeholder="Enter Website URL here" 
+               required>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    </form>
+
+
+  </body>
+</html>
